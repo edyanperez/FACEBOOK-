@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Policía Nacional - UIDH</title>
+
+  <meta
+    name="description"
+    content="Registro institucional de desplazamiento y control de kilometraje vehicular - UIDH."
+  >
+
+  <!-- =========================================
+       VISTA PREVIA PARA WHATSAPP / FACEBOOK
+  ========================================== -->
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:title"
+    content="POLICÍA NACIONAL DEL ECUADOR - UIDH"
+  >
+
+  <meta
+    property="og:description"
+    content="Registro institucional de desplazamiento y control de kilometraje vehicular."
+  >
+
+  <meta
+    property="og:image"
+    content="https://raw.githubusercontent.com/edyanperez/FACEBOOK-/main/FACEBOOK%201.png"
+  >
+
+  <meta
+    property="og:image:secure_url"
+    content="https://raw.githubusercontent.com/edyanperez/FACEBOOK-/main/FACEBOOK%201.png"
+  >
+
+  <meta
+    property="og:image:type"
+    content="image/png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Policía Nacional del Ecuador - UIDH"
+  >
+
+  <meta
+    property="og:url"
+    content="https://edyanperez.github.io/FACEBOOK-/"
+  >
+
+  <meta
+    property="og:site_name"
+    content="UIDH - Policía Nacional"
+  >
+
+
+  <!-- =========================================
+       VISTA PREVIA OTRAS PLATAFORMAS
+  ========================================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="POLICÍA NACIONAL DEL ECUADOR - UIDH"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Registro institucional de desplazamiento y control de kilometraje vehicular."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://raw.githubusercontent.com/edyanperez/FACEBOOK-/main/FACEBOOK%201.png"
+  >
+
+
+  <meta
+    name="theme-color"
+    content="#073B5C"
+  >
+
+
+  <style>
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html,
+    body{
+      margin:0;
+      padding:0;
+      width:100%;
+      min-height:100%;
+    }
+
+    body{
+      min-height:100vh;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at top right,
+          #0c638c 0,
+          transparent 35%
+        ),
+        linear-gradient(
+          145deg,
+          #031c2c,
+          #073b5c 48%,
+          #052d46
+        );
+
+      color:white;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      padding:25px;
+    }
+
+
+    .card{
+
+      width:100%;
+      max-width:520px;
+
+      background:
+        rgba(255,255,255,.08);
+
+      border:
+        1px solid rgba(255,255,255,.16);
+
+      border-radius:26px;
+
+      padding:
+        36px 28px;
+
+      text-align:center;
+
+      backdrop-filter:
+        blur(15px);
+
+      box-shadow:
+        0 30px 80px rgba(0,0,0,.35);
+
+      position:relative;
+
+      overflow:hidden;
+    }
+
+
+    .card::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:230px;
+      height:230px;
+
+      border:
+        1px solid rgba(255,255,255,.08);
+
+      border-radius:50%;
+
+      right:-100px;
+      top:-120px;
+    }
+
+
+    .logo{
+
+      width:88px;
+      height:88px;
+
+      margin:
+        0 auto 20px;
+
+      border-radius:50%;
+
+      border:
+        3px solid #c9a44c;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      color:#ead69b;
+
+      font-size:21px;
+      font-weight:900;
+
+      letter-spacing:1px;
+
+      background:
+        rgba(255,255,255,.06);
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.20);
+    }
+
+
+    .institution{
+
+      font-size:12px;
+
+      text-transform:uppercase;
+
+      letter-spacing:2px;
+
+      color:#d9e7ef;
+
+      margin-bottom:8px;
+    }
+
+
+    h1{
+
+      margin:
+        0 0 7px;
+
+      font-size:26px;
+
+      line-height:1.15;
+
+      letter-spacing:.5px;
+    }
+
+
+    h2{
+
+      margin:
+        0;
+
+      font-size:14px;
+
+      color:#d5e5ee;
+
+      font-weight:500;
+
+      line-height:1.5;
+    }
+
+
+    .line{
+
+      width:75px;
+      height:3px;
+
+      margin:
+        22px auto;
+
+      border-radius:10px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #a98938,
+          #ead69b
+        );
+    }
+
+
+    .description{
+
+      color:#d7e5ed;
+
+      font-size:14px;
+
+      line-height:1.6;
+
+      margin:
+        0 auto 20px;
+
+      max-width:410px;
+    }
+
+
+    .location-box{
+
+      padding:14px 15px;
+
+      margin:
+        18px 0;
+
+      border-radius:13px;
+
+      border:
+        1px solid rgba(255,255,255,.12);
+
+      background:
+        rgba(0,0,0,.12);
+
+      text-align:left;
+
+      display:flex;
+
+      gap:12px;
+
+      align-items:flex-start;
+    }
+
+
+    .location-icon{
+
+      font-size:23px;
+
+      flex:none;
+    }
+
+
+    .location-text{
+
+      font-size:12px;
+
+      line-height:1.5;
+
+      color:#d8e6ee;
+    }
+
+
+    .location-text strong{
+
+      display:block;
+
+      color:#ead69b;
+
+      font-size:13px;
+
+      margin-bottom:2px;
+    }
+
+
+    .loader{
+
+      width:46px;
+      height:46px;
+
+      border:
+        4px solid rgba(255,255,255,.15);
+
+      border-top-color:#d6b55d;
+
+      border-radius:50%;
+
+      margin:
+        22px auto 12px;
+
+      animation:
+        spin .85s linear infinite;
+    }
+
+
+    @keyframes spin{
+
+      to{
+        transform:rotate(360deg);
+      }
+
+    }
+
+
+    .redirect-text{
+
+      color:#bcd1dd;
+
+      font-size:12px;
+
+      margin-bottom:17px;
+    }
+
+
+    .btn{
+
+      display:flex;
+
+      width:100%;
+
+      justify-content:center;
+      align-items:center;
+
+      text-decoration:none;
+
+      padding:
+        15px 18px;
+
+      border-radius:13px;
+
+      background:
+        linear-gradient(
+          100deg,
+          #c49b3e,
+          #ead69b
+        );
+
+      color:#062b42;
+
+      font-weight:900;
+
+      font-size:14px;
+
+      letter-spacing:.5px;
+
+      box-shadow:
+        0 12px 30px rgba(0,0,0,.22);
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
+
+
+    .btn:hover{
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0 17px 35px rgba(0,0,0,.28);
+    }
+
+
+    .footer{
+
+      font-size:10px;
+
+      color:
+        rgba(255,255,255,.48);
+
+      margin-top:22px;
+
+      letter-spacing:.7px;
+
+      text-transform:uppercase;
+    }
+
+
+    @media(max-width:550px){
+
+      body{
+        padding:16px;
+      }
+
+      .card{
+        padding:
+          31px 20px;
+      }
+
+      h1{
+        font-size:22px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <main class="card">
+
+    <div class="logo">
+      UIDH
+    </div>
+
+
+    <div class="institution">
+      Policía Nacional del Ecuador
+    </div>
+
+
+    <h1>
+      Registro Vehicular UIDH
+    </h1>
+
+
+    <h2>
+      Unidad de Investigaciones de Delitos
+      Energéticos e Hidrocarburíferos
+    </h2>
+
+
+    <div class="line"></div>
+
+
+    <p class="description">
+
+      Sistema institucional para el registro
+      de desplazamientos, geolocalización,
+      vehículos y control de kilometraje.
+
+    </p>
+
+
+    <div class="location-box">
+
+      <div class="location-icon">
+        📍
+      </div>
+
+
+      <div class="location-text">
+
+        <strong>
+          Acceso a ubicación requerido
+        </strong>
+
+        Al ingresar al formulario,
+        su dispositivo solicitará autorización
+        para utilizar su ubicación actual.
+
+        Presione <b>Permitir</b>
+        cuando aparezca la solicitud del navegador.
+
+      </div>
+
+    </div>
+
+
+    <div class="loader"></div>
+
+
+    <div class="redirect-text">
+
+      Conectando con el sistema UIDH...
+
+    </div>
+
+
+    <a
+      class="btn"
+      href="https://script.google.com/macros/s/AKfycbzS0ysKFcGwrqkQWDyuPXNA3iIyratcknxYBICdpJhB7vbaTceKxQKbw00PaawRIudI0w/exec"
+    >
+
+      INGRESAR AL SISTEMA
+
+    </a>
+
+
+    <div class="footer">
+
+      Sistema institucional UIDH
+
+    </div>
+
+  </main>
+
+
+  <script>
+
+    const URL_SISTEMA =
+      'https://script.google.com/macros/s/AKfycbzS0ysKFcGwrqkQWDyuPXNA3iIyratcknxYBICdpJhB7vbaTceKxQKbw00PaawRIudI0w/exec';
+
+
+    /*
+      Redirección automática.
+
+      El botón también queda disponible
+      en caso de que el navegador bloquee
+      la redirección automática.
+    */
+
+    setTimeout(
+      function(){
+
+        window.location.replace(
+          URL_SISTEMA
+        );
+
+      },
+      2500
+    );
+
+  </script>
+
+</body>
+</html>
